@@ -1,0 +1,41 @@
+header {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos {
+  width: 30%;
+  max-height: 100%;
+  display: inherit;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+
+  #uburLogo {
+    height: 80px;
+  }
+
+  #uburText {
+    height: 80px;
+    margin-left: 10px;
+  }
+}
+
+.navLinks {
+  margin-right: 20px;
+  width: 40%;
+  display: inherit;
+  justify-content: space-evenly;
+  a {
+    color: white;
+  }
+
+  a:hover {
+    transform: scale(1.2);
+    transition: transform 0.25s;
+    color: cyan;
+  }
+}

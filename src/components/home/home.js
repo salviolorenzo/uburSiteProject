@@ -7,7 +7,9 @@ import ReactPlayer from 'react-player';
 export default () => {
   return (
     <div className="heroVid">
-      <ReactPlayer file={Clip2} playing />
+      <video>
+        <source src="../../assets/VJ_Clip_2_V2.mov" type="video/mp4" />
+      </video>
     </div>
   );
 };
