@@ -1,7 +1,13 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import './home.scss';
+import Clip2 from '../../assets/VJ_Clip_2_V2.mp4';
+import ReactPlayer from 'react-player';
 
 export default () => {
-  return <div>This will be the Home Page</div>;
+  return (
+    <div className="heroVid">
+      <ReactPlayer file={Clip2} playing />
+    </div>
+  );
 };

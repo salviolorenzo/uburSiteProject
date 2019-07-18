@@ -9,27 +9,17 @@ import Login from './components/login/login';
 import './App.css';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
-
-  if (!isLoggedIn) {
-    return (
-      <Router>
-        <Route path="/" exact component={Login} />
-      </Router>
-    );
-  } else {
-    return (
-      <Router>
-        <div className="App">
-          <Header />
-          <Route path="/home" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/shop" component={Shop} />
-          <Footer />
-        </div>
-      </Router>
-    );
-  }
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <Route path="/home" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/shop" component={Shop} />
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
