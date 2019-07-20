@@ -1,3 +1,20 @@
+@keyframes slideOpen {
+  from {
+    height: 0;
+  }
+  to {
+    height: 200px;
+  }
+}
+@keyframes slideClosed {
+  from {
+    height: 200px;
+  }
+  to {
+    height: 0;
+  }
+}
+
 header {
   height: 100px;
   background-color: black;
@@ -7,15 +24,15 @@ header {
 }
 
 .logos {
-  max-width: 30%;
-  max-height: 100%;
+  width: 30%;
+  height: 100%;
   display: inherit;
   align-items: center;
   justify-content: flex-start;
   padding-left: 20px;
 
   #uburLogo {
-    max-height: 80px;
+    max-height: 80%;
   }
 
   #uburText {
@@ -38,4 +55,37 @@ header {
     transition: transform 0.25s;
     color: cyan;
   }
+}
+
+#menuIcon {
+  height: 60%;
+  padding-right: 20px;
+}
+
+.navLinksMenu {
+  display: flex;
+  flex-direction: column;
+  // z-index: -1;
+  width: 100%;
+  background-color: grey;
+  top: 100px;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+
+  a {
+    font-size: 24px;
+    color: white;
+    padding: 5px;
+  }
+}
+
+.menuOpen {
+  height: 200px;
+  animation: slideOpen 0.5s;
+}
+
+.menuClosed {
+  height: 0;
+  animation: slideClosed 0.5s;
 }
