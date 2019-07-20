@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, NavLink } from 'react-router-dom';
-import uburLogo from '../../assets/Ubur_Cuphead_Vector_image_no_line.png';
-import uburText from '../../assets/Ubur_logo_final_text.png';
+import uburLogo from './images/Ubur_Cuphead_Vector_image_no_line.png';
+import uburText from './images/Ubur_logo_final_text.png';
 import './header.scss';
 
 export default () => {
@@ -12,7 +12,7 @@ export default () => {
         <img id="uburText" src={uburText} alt="Ubur Text" />
       </div>
       <div className="navLinks">
-        <NavLink to="/home">Home</NavLink>
+        <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/tour">Tour</NavLink>
         <a

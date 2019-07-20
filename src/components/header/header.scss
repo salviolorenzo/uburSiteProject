@@ -7,7 +7,7 @@ header {
 }
 
 .logos {
-  width: 30%;
+  max-width: 30%;
   max-height: 100%;
   display: inherit;
   align-items: center;
@@ -15,11 +15,11 @@ header {
   padding-left: 20px;
 
   #uburLogo {
-    height: 80px;
+    max-height: 80px;
   }
 
   #uburText {
-    height: 80px;
+    max-height: 80px;
     margin-left: 10px;
   }
 }

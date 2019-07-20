@@ -5,7 +5,6 @@ import Footer from './components/footer/footer';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Shop from './components/shop/shop';
-import Login from './components/login/login';
 import './App.css';
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Route path="/home" component={Home} />
+        <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/shop" component={Shop} />
         <Footer />
