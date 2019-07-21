@@ -24,7 +24,7 @@
 }
 
 .logos {
-  width: 30%;
+  width: 50%;
   height: 100%;
   display: inherit;
   align-items: center;
@@ -82,9 +82,14 @@
 @media screen and (min-width: 350px) {
   .logos {
     padding-left: 20px;
-
     #uburText {
       margin-left: 10px;
     }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .logos {
+    width: 40%;
   }
 }

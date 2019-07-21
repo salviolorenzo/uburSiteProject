@@ -61,7 +61,7 @@ h2 {
 
 .Product-wrapper {
   max-width: 900px;
-  margin: 10px auto 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -90,12 +90,13 @@ h2 {
   cursor: pointer;
   transition: 0.5s;
   border: solid #1a1b2a 1px;
+  border-radius: 5px;
 }
 
 .button:hover,
 .button:focus {
   color: #1a1b2a;
-  background-color: white;
+  background-color: cyan;
 
   transition: 0.5s;
 }
@@ -361,9 +362,14 @@ h2 {
   /* font-family: 'Poppins', sans-serif; */
   flex: 0 1 39%;
   margin: 5px 1% 3px 1%;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 5px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Product__option {
+  border-radius: 5px;
+  padding: 5px;
 }
 
 @media (pointer: coarse) {
@@ -394,7 +400,7 @@ h2 {
 
 .Product__quantity {
   display: block;
-  width: 15%;
+  width: 10%;
   margin-bottom: 10px;
 }
 
