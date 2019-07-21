@@ -15,7 +15,7 @@
   }
 }
 
-header {
+.mainHeader {
   height: 100px;
   background-color: black;
   display: flex;
@@ -89,13 +89,12 @@ header {
   animation: slideClosed 0.5s;
 }
 
-@media screen and (min-width: 350px){
-  .logos{
-      padding-left: 20px;
+@media screen and (min-width: 350px) {
+  .logos {
+    padding-left: 20px;
 
     #uburText {
       margin-left: 10px;
-
     }
   }
 }

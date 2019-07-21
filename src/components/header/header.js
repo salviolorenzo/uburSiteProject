@@ -5,10 +5,10 @@ import uburText from './images/Ubur_logo_final_text.png';
 import menuIcon from './images/icons8-menu-48.png';
 import './header.scss';
 
-export default ({ isMobile, menuIsOpen, handleMenuClick }) => {
+export default ({ isMobile, menuIsOpen, handleMenuClick, handleCartOpen }) => {
   if (isMobile) {
     return (
-      <header>
+      <header className="mainHeader">
         <div className="logos">
           <img id="uburLogo" src={uburLogo} alt="Ubur Logo" />
           <img id="uburText" src={uburText} alt="Ubur Text" />
@@ -33,13 +33,13 @@ export default ({ isMobile, menuIsOpen, handleMenuClick }) => {
             Music
           </a>
           <NavLink to="/tour">Tour</NavLink>
-          <NavLink to="/shop">Shop</NavLink>
+          <a href="/">Cart</a>
         </div>
       </header>
     );
   } else {
     return (
-      <header>
+      <header className="mainHeader">
         <div className="logos">
           <img id="uburLogo" src={uburLogo} alt="Ubur Logo" />
           <img id="uburText" src={uburText} alt="Ubur Text" />
@@ -54,7 +54,9 @@ export default ({ isMobile, menuIsOpen, handleMenuClick }) => {
             Music
           </a>
           <NavLink to="/tour">Tour</NavLink>
-          <NavLink to="/shop">Shop</NavLink>
+          <a href="#" onClick={handleCartOpen}>
+            Cart
+          </a>
         </div>
       </header>
     );

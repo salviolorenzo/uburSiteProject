@@ -3,5 +3,5 @@ import { Route, Link } from 'react-router-dom';
 import './footer.scss';
 
 export default () => {
-  return <footer>This will be the Footer</footer>;
+  return <footer className="mainFooter">This will be the Footer</footer>;
 };

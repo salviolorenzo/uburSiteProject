@@ -16,7 +16,10 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-video-cover": "^1.2.2",
-    "next": "^9.0.2"
+    "next": "^9.0.2",
+    "react-redux": "^5.1.0",
+    "redux": "^4.0.1",
+    "shopify-buy": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",

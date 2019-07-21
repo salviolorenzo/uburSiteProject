@@ -5,11 +5,19 @@ import Footer from './components/footer/footer';
 import Home from './components/home/home';
 import Tour from './components/tour/tour';
 import Shop from './components/shop/shop';
+import { connect } from 'react-redux';
+import Cart from './components/shopify/Cart';
+import store from './store';
 import './App.css';
+import GenericProductsPage from './components/GenericProductsPage';
 
 class App extends Component {
   constructor(props) {
     super(props);
+    this.updateQuantityInCart = this.updateQuantityInCart.bind(this);
+    this.removeLineItemInCart = this.removeLineItemInCart.bind(this);
+    this.handleCartClose = this.handleCartClose.bind(this);
+    this.handleCartOpen = this.handleCartOpen.bind(this);
     this.state = {
       isMobile: false,
       menuIsOpen: false
@@ -19,6 +27,40 @@ class App extends Component {
   componentDidMount() {
     this.resize();
     window.addEventListener('resize', this.resize.bind(this));
+  }
+
+  updateQuantityInCart(lineItemId, quantity) {
+    const state = store.getState(); // state from redux store
+    const checkoutId = state.checkout.id;
+    const lineItemsToUpdate = [
+      { id: lineItemId, quantity: parseInt(quantity, 10) }
+    ];
+    state.client.checkout
+      .updateLineItems(checkoutId, lineItemsToUpdate)
+      .then(res => {
+        store.dispatch({
+          type: 'UPDATE_QUANTITY_IN_CART',
+          payload: { checkout: res }
+        });
+      });
+  }
+  removeLineItemInCart(lineItemId) {
+    const state = store.getState(); // state from redux store
+    const checkoutId = state.checkout.id;
+    state.client.checkout
+      .removeLineItems(checkoutId, [lineItemId])
+      .then(res => {
+        store.dispatch({
+          type: 'REMOVE_LINE_ITEM_IN_CART',
+          payload: { checkout: res }
+        });
+      });
+  }
+  handleCartClose() {
+    store.dispatch({ type: 'CLOSE_CART' });
+  }
+  handleCartOpen() {
+    store.dispatch({ type: 'OPEN_CART' });
   }
 
   resize() {
@@ -42,17 +84,27 @@ class App extends Component {
   }
 
   render() {
+    const state = store.getState(); // state from redux store
+
     return (
       <Router>
         <div className="App">
           <Header
+            handleCartOpen={this.handleCartOpen}
             isMobile={this.state.isMobile}
             menuIsOpen={this.state.menuIsOpen}
             handleMenuClick={this.handleMenuClick.bind(this)}
           />
           <Route path="/" exact component={Home} />
           <Route path="/tour" component={Tour} />
-          <Route path="/shop" component={Shop} />
+          <Cart
+            checkout={state.checkout}
+            isCartOpen={state.isCartOpen}
+            handleCartClose={this.handleCartClose}
+            updateQuantityInCart={this.updateQuantityInCart}
+            removeLineItemInCart={this.removeLineItemInCart}
+          />
+          <GenericProductsPage />
           <Footer />
         </div>
       </Router>
@@ -60,4 +112,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(state => state)(App);
