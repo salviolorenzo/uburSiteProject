@@ -33,7 +33,9 @@ export default ({ isMobile, menuIsOpen, handleMenuClick, handleCartOpen }) => {
             Music
           </a>
           <NavLink to="/tour">Tour</NavLink>
-          <a href="/">Cart</a>
+          <a href="#" onClick={handleCartOpen}>
+            Cart
+          </a>
         </div>
       </header>
     );

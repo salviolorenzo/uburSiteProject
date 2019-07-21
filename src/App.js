@@ -4,12 +4,10 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import Home from './components/home/home';
 import Tour from './components/tour/tour';
-import Shop from './components/shop/shop';
 import { connect } from 'react-redux';
 import Cart from './components/shopify/Cart';
 import store from './store';
 import './App.css';
-import GenericProductsPage from './components/GenericProductsPage';
 
 class App extends Component {
   constructor(props) {
@@ -104,7 +102,6 @@ class App extends Component {
             updateQuantityInCart={this.updateQuantityInCart}
             removeLineItemInCart={this.removeLineItemInCart}
           />
-          <GenericProductsPage />
           <Footer />
         </div>
       </Router>
