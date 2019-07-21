@@ -48,6 +48,14 @@ export default () => {
           </a>
         </li>
       </ul>
+      <a
+        id="authorLink"
+        href="https://lorenzosalvio.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Built by Lorenzo Salvio
+      </a>
     </footer>
   );
 };

@@ -38,5 +38,5 @@ a {
 a:hover {
   transform: scale(1.2);
   transition: transform 0.25s;
-  color: cyan;
+  color: rgba(0, 255, 255, 0.8);
 }
