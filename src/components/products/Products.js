@@ -31,7 +31,7 @@ class ProductsComp extends React.Component {
     );
     return (
       <>
-        <h2 id="merchHeader">Merch</h2>
+        {/* <h2 id="merchHeader">{}</h2> */}
         <div className="productsSection">{oProducts}</div>
       </>
     );
