@@ -31,5 +31,12 @@ code {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-size: 20px;
+}
+
+a:hover {
+  transform: scale(1.2);
+  transition: transform 0.25s;
+  color: cyan;
 }
