@@ -9,8 +9,20 @@
   background-position: center;
   background-size: cover;
 
-  video {
-    width: 65%;
-    max-height: 400px;
+  .videoPlaceHolder {
+    width: 90%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px 0 black;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .heroVid {
+    .videoPlaceHolder {
+      width: 65%;
+      height: 350px;
+    }
   }
 }

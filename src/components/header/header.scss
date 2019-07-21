@@ -29,7 +29,6 @@ header {
   display: inherit;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 20px;
 
   #uburLogo {
     max-height: 80%;
@@ -37,7 +36,6 @@ header {
 
   #uburText {
     max-height: 80px;
-    margin-left: 10px;
   }
 }
 
@@ -48,6 +46,7 @@ header {
   justify-content: space-evenly;
   a {
     color: white;
+    font-size: 20px;
   }
 
   a:hover {
@@ -76,7 +75,7 @@ header {
   a {
     font-size: 24px;
     color: white;
-    padding: 5px;
+    padding: 10px;
   }
 }
 
@@ -88,4 +87,15 @@ header {
 .menuClosed {
   height: 0;
   animation: slideClosed 0.5s;
+}
+
+@media screen and (min-width: 350px){
+  .logos{
+      padding-left: 20px;
+
+    #uburText {
+      margin-left: 10px;
+
+    }
+  }
 }

@@ -25,8 +25,6 @@ export default ({ isMobile, menuIsOpen, handleMenuClick }) => {
           }
         >
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/tour">Tour</NavLink>
           <a
             href="https://open.spotify.com/artist/2m8lZUuPm2BLQ2c8gtIAV6?si=bS8wKITSSPmQ8ZiIQ6P_Xw"
             target="_blank"
@@ -34,6 +32,7 @@ export default ({ isMobile, menuIsOpen, handleMenuClick }) => {
           >
             Music
           </a>
+          <NavLink to="/tour">Tour</NavLink>
           <NavLink to="/shop">Shop</NavLink>
         </div>
       </header>
@@ -47,8 +46,6 @@ export default ({ isMobile, menuIsOpen, handleMenuClick }) => {
         </div>
         <div className="navLinks">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/tour">Tour</NavLink>
           <a
             href="https://open.spotify.com/artist/2m8lZUuPm2BLQ2c8gtIAV6?si=bS8wKITSSPmQ8ZiIQ6P_Xw"
             target="_blank"
@@ -56,6 +53,7 @@ export default ({ isMobile, menuIsOpen, handleMenuClick }) => {
           >
             Music
           </a>
+          <NavLink to="/tour">Tour</NavLink>
           <NavLink to="/shop">Shop</NavLink>
         </div>
       </header>
