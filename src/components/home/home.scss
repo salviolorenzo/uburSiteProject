@@ -18,11 +18,16 @@
   }
 }
 
+.twitterFeed {
+  width: 100%;
+  padding: 0 20px 10px 20px;
+}
+
 @media screen and (min-width: 600px) {
   .heroVid {
     .videoPlaceHolder {
-      width: 65%;
-      height: 350px;
+      width: 600px;
+      height: 400px;
     }
   }
 }
