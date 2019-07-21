@@ -29,14 +29,13 @@
   display: inherit;
   align-items: center;
   justify-content: flex-start;
+}
+#uburLogo {
+  max-height: 80%;
+}
 
-  #uburLogo {
-    max-height: 80%;
-  }
-
-  #uburText {
-    max-height: 80px;
-  }
+#uburText {
+  max-height: 80px;
 }
 
 .navLinks {

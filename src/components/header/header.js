@@ -8,11 +8,12 @@ import './header.scss';
 export default ({ isMobile, menuIsOpen, handleMenuClick, handleCartOpen }) => {
   if (isMobile) {
     return (
-      <header className="mainHeader">
-        <div className="logos">
-          <img id="uburLogo" src={uburLogo} alt="Ubur Logo" />
-          <img id="uburText" src={uburText} alt="Ubur Text" />
-        </div>
+      <header
+        className="mainHeader"
+        style={{ justifyContent: 'space-between' }}
+      >
+        <img id="uburLogo" src={uburLogo} alt="Ubur Logo" />
+        <img id="uburText" src={uburText} alt="Ubur Text" />
         <img
           onClick={handleMenuClick}
           id="menuIcon"
@@ -24,7 +25,9 @@ export default ({ isMobile, menuIsOpen, handleMenuClick, handleCartOpen }) => {
             menuIsOpen ? 'navLinksMenu menuOpen' : 'navLinksMenu menuClosed'
           }
         >
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" onClick={handleMenuClick}>
+            Home
+          </NavLink>
           <a
             href="https://open.spotify.com/artist/2m8lZUuPm2BLQ2c8gtIAV6?si=bS8wKITSSPmQ8ZiIQ6P_Xw"
             target="_blank"
@@ -32,7 +35,9 @@ export default ({ isMobile, menuIsOpen, handleMenuClick, handleCartOpen }) => {
           >
             Music
           </a>
-          <NavLink to="/tour">Tour</NavLink>
+          <NavLink to="/tour" onClick={handleMenuClick}>
+            Tour
+          </NavLink>
           <a href="#" onClick={handleCartOpen}>
             Cart
           </a>
