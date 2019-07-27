@@ -13,6 +13,7 @@
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-instafeed": "^1.0.0",
     "react-instagram-embed": "^1.5.0",
     "react-player": "^1.11.1",
     "react-redux": "^5.1.0",
@@ -21,7 +22,8 @@
     "react-twitter-embed": "^2.0.8",
     "react-video-cover": "^1.2.2",
     "redux": "^4.0.1",
-    "shopify-buy": "^1.9.1"
+    "shopify-buy": "^1.9.1",
+    "use-abortable-fetch": "^2.6.3"
   },
   "scripts": {
     "start": "react-scripts start",

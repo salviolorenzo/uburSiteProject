@@ -1,0 +1,14 @@
+.instaFeedContainer {
+  // height: 500px;
+  display: flex;
+  // flex-wrap: wrap;
+  overflow-x: scroll;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-right: 10px;
+
+  & > div {
+    margin: 10px;
+  }
+}

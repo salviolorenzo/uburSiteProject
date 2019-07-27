@@ -3,6 +3,7 @@ import './home.scss';
 import ReactPlayer from 'react-player';
 import Products from '../products/Products';
 import { TwitterTimelineEmbed, TwitterFollowButton } from 'react-twitter-embed';
+import InstaFeed from '../InstaFeed/InstaFeed';
 
 export default () => {
   return (
@@ -18,14 +19,15 @@ export default () => {
         </div>
       </div>
       <Products />
-      <div className="twitterFeed">
+      <InstaFeed />
+      {/* <div className="twitterFeed">
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="uburdub"
           options={{ height: 500, width: '100%' }}
         />
         <TwitterFollowButton screenName={'uburdub'} />
-      </div>
+      </div> */}
     </>
   );
 };
