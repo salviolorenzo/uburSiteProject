@@ -11,13 +11,13 @@ export default class Tour extends Component {
   }
 
   componentDidMount() {
-    fetch(`https://api.songkick.com/api/3.0/artists/9542144/gigography.json?apikey=${
+    fetch(`https://api.songkick.com/api/3.0/artists/9542144/calendar.json?apikey=${
       this.state.apiKey
     }
     `)
       .then(r => r.json())
       .then(res => {
-        let shows = res.resultsPage.results.event.reverse();
+        let shows = res.resultsPage.results.event;
         this.setState({
           events: shows
         });
@@ -38,7 +38,12 @@ export default class Tour extends Component {
             {this.state.events.map((item, index) => {
               return (
                 <div className="showsItem" key={index}>
-                  <h3>{item.displayName}</h3>
+                  <div className="showText">
+                    <h3>{item.displayName}</h3>
+                    <div>
+                      {item.venue.displayName} | | {item.location.city}
+                    </div>
+                  </div>
                   <a href={item.uri} target="_blank" rel="noreferrer noopener">
                     <button>Tickets</button>
                   </a>
