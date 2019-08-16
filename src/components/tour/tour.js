@@ -33,6 +33,7 @@ export default class Tour extends Component {
     if (this.state.events.length > 0) {
       return (
         <div className="mainCont">
+          <h2>Upcoming Shows</h2>
           <div className="shows">
             {this.state.events.map((item, index) => {
               return (

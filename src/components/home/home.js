@@ -19,15 +19,7 @@ export default () => {
         </div>
       </div>
       <Products />
-      <InstaFeed />
-      {/* <div className="twitterFeed">
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="uburdub"
-          options={{ height: 500, width: '100%' }}
-        />
-        <TwitterFollowButton screenName={'uburdub'} />
-      </div> */}
+      
     </>
   );
 };
