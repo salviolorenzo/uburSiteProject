@@ -42,3 +42,12 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .heroVid {
+    .videoPlaceHolder {
+      width: 800px;
+      height: 500px;
+    }
+  }
+}
