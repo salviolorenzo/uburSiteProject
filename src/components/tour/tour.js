@@ -24,12 +24,7 @@ export default class Tour extends Component {
       });
   }
 
-  checkEvents() {
-    console.log(this.state.events);
-  }
-
   render() {
-    this.checkEvents();
     if (this.state.events.length > 0) {
       return (
         <div className="mainCont">
@@ -66,7 +61,7 @@ export default class Tour extends Component {
     } else {
       return (
         <div className="mainCont">
-          <div className="shows">
+          <div className="showsLoading">
             <h3>Loading shows...</h3>
           </div>
         </div>
