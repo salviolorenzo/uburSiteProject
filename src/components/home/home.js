@@ -8,25 +8,23 @@ import epPoster from './images/epPoster.png';
 // import { TwitterTimelineEmbed, TwitterFollowButton } from 'react-twitter-embed';
 // import InstaFeed from '../InstaFeed/InstaFeed';
 
-const dateCheck = () => {
-  let currentDate = new Date();
-  let targetDate = new Date('2020-01-09 21:00:00 GMT-0800');
+// const dateCheck = () => {
+//   let currentDate = new Date();
+//   let targetDate = new Date('2020-01-09 21:00:00 GMT-0800');
 
-  if (currentDate >= targetDate) {
-    return 'NOW!';
-  } else {
-    return 'AT 9PM PST';
-  }
-};
+//   if (currentDate >= targetDate) {
+//     return 'NOW!';
+//   } else {
+//     return 'AT 9PM PST';
+//   }
+// };
 
 export default () => {
-  dateCheck();
+  // dateCheck();
   return (
     <>
       <div className='heroVid'>
-        <h1>
-          PAINFUL CHOICE EP OUT <span>{dateCheck()}</span>
-        </h1>
+        <h1>PAINFUL CHOICE EP OUT NOW!</h1>
         <div className='videoPlaceHolder'>
           <ReactPlayer
             url={epVid}
