@@ -44,9 +44,9 @@ export default class Tour extends Component {
       });
     } else {
       return (
-        <div>
-          <h2>More shows coming soon!</h2>
-        </div>
+        // <div>
+        <h2>More shows coming soon!</h2>
+        // </div>
       );
     }
   }

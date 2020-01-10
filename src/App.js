@@ -23,6 +23,9 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.setState({
+      menuIsOpen: false
+    });
     this.resize();
     window.addEventListener('resize', this.resize.bind(this));
   }
@@ -86,15 +89,15 @@ class App extends Component {
 
     return (
       <Router>
-        <div className="App">
+        <div className='App'>
           <Header
             handleCartOpen={this.handleCartOpen}
             isMobile={this.state.isMobile}
             menuIsOpen={this.state.menuIsOpen}
             handleMenuClick={this.handleMenuClick.bind(this)}
           />
-          <Route path="/" exact component={Home} />
-          <Route path="/tour" component={Tour} />
+          <Route path='/' exact component={Home} />
+          <Route path='/tour' component={Tour} />
           <Cart
             checkout={state.checkout}
             isCartOpen={state.isCartOpen}

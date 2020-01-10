@@ -9,36 +9,36 @@ export default ({ isMobile, menuIsOpen, handleMenuClick, handleCartOpen }) => {
   if (isMobile) {
     return (
       <header
-        className="mainHeader"
+        className='mainHeader'
         style={{ justifyContent: 'space-between' }}
       >
-        <img id="uburLogo" src={uburLogo} alt="Ubur Logo" />
-        <img id="uburText" src={uburText} alt="Ubur Text" />
+        <img id='uburLogo' src={uburLogo} alt='Ubur Logo' />
+        <img id='uburText' src={uburText} alt='Ubur Text' />
         <img
           onClick={handleMenuClick}
-          id="menuIcon"
+          id='menuIcon'
           src={menuIcon}
-          alt="Menu Icon"
+          alt='Menu Icon'
         />
         <div
           className={
             menuIsOpen ? 'navLinksMenu menuOpen' : 'navLinksMenu menuClosed'
           }
         >
-          <NavLink to="/" onClick={handleMenuClick}>
+          <NavLink to='/' onClick={handleMenuClick}>
             Home
           </NavLink>
           <a
-            href="https://open.spotify.com/artist/2m8lZUuPm2BLQ2c8gtIAV6?si=bS8wKITSSPmQ8ZiIQ6P_Xw"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://open.spotify.com/artist/2m8lZUuPm2BLQ2c8gtIAV6?si=bS8wKITSSPmQ8ZiIQ6P_Xw'
+            target='_blank'
+            rel='noreferrer noopener'
           >
             Music
           </a>
-          <NavLink to="/tour" onClick={handleMenuClick}>
+          <NavLink to='/tour' onClick={handleMenuClick}>
             Tour
           </NavLink>
-          <a href="#/" onClick={handleCartOpen}>
+          <a href='#/' onClick={handleCartOpen}>
             Cart
           </a>
         </div>
@@ -46,22 +46,22 @@ export default ({ isMobile, menuIsOpen, handleMenuClick, handleCartOpen }) => {
     );
   } else {
     return (
-      <header className="mainHeader">
-        <div className="logos">
-          <img id="uburLogo" src={uburLogo} alt="Ubur Logo" />
-          <img id="uburText" src={uburText} alt="Ubur Text" />
+      <header className='mainHeader'>
+        <div className='logos'>
+          <img id='uburLogo' src={uburLogo} alt='Ubur Logo' />
+          <img id='uburText' src={uburText} alt='Ubur Text' />
         </div>
-        <div className="navLinks">
-          <NavLink to="/">Home</NavLink>
+        <div className='navLinks'>
+          <NavLink to='/'>Home</NavLink>
           <a
-            href="https://open.spotify.com/artist/2m8lZUuPm2BLQ2c8gtIAV6?si=bS8wKITSSPmQ8ZiIQ6P_Xw"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://open.spotify.com/artist/2m8lZUuPm2BLQ2c8gtIAV6?si=bS8wKITSSPmQ8ZiIQ6P_Xw'
+            target='_blank'
+            rel='noreferrer noopener'
           >
             Music
           </a>
-          <NavLink to="/tour">Tour</NavLink>
-          <a href="#" onClick={handleCartOpen}>
+          <NavLink to='/tour'>Tour</NavLink>
+          <a href='' onClick={handleCartOpen}>
             Cart
           </a>
         </div>
