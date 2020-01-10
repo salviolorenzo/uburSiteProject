@@ -25,7 +25,7 @@
 
   h1 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    font-size: 22px;
+    font-size: 20px;
     color: white;
     font-weight: 600;
 
@@ -58,10 +58,18 @@
   padding: 20px;
 }
 
+@media screen and (min-width: 500px) {
+  .heroVid {
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
 @media screen and (min-width: 600px) {
   .heroVid {
     h1 {
-      font-size: 41px;
+      font-size: 31px;
     }
     .videoPlaceHolder {
       width: 600px;
@@ -72,6 +80,9 @@
 
 @media screen and (min-width: 1200px) {
   .heroVid {
+    h1 {
+      font-size: 43px;
+    }
     .videoPlaceHolder {
       width: 800px;
       height: 500px;
