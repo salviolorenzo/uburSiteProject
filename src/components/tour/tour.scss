@@ -16,6 +16,34 @@
     color: white;
   }
 
+  .moreShows {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > span {
+      margin: 10px;
+    }
+    width: 90%;
+    max-height: 85%;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 black;
+    padding-bottom: 5px;
+
+    a {
+      color: black;
+      font-size: 14px;
+      padding: 0 2px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
   .showsLoading {
     width: 90%;
     display: flex;
