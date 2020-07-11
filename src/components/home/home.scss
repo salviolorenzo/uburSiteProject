@@ -1,95 +1,95 @@
 @keyframes App-logo-spin {
-  0% {
-    transform: rotate(-3deg);
-  }
-  50% {
-    transform: rotate(3deg);
-  }
+	0% {
+		transform: rotate(-3deg);
+	}
+	50% {
+		transform: rotate(3deg);
+	}
 
-  100% {
-    transform: rotate(-3deg);
-  }
+	100% {
+		transform: rotate(-3deg);
+	}
 }
 
 .announcement {
-  z-index: 1;
+	z-index: 1;
 }
 
 .heroVid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 90vh;
-  overflow: hidden;
-  background: url('./images/ubur.gif');
-  background-position: center;
-  background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+	background: url('./images/ubur.webp');
+	background-position: center;
+	background-size: cover;
 
-  h1 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    font-size: 20px;
-    color: white;
-    font-weight: 600;
+	h1 {
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+		font-size: 20px;
+		color: white;
+		font-weight: 600;
 
-    animation: App-logo-spin infinite 3s linear;
-    // height: 10vmin;
-  }
+		animation: App-logo-spin infinite 3s linear;
+		// height: 10vmin;
+	}
 
-  .videoPlaceHolder {
-    width: 90%;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 0 20px 0 black;
-    border-radius: 10px;
+	.videoPlaceHolder {
+		width: 90%;
+		height: 300px;
+		background-color: rgba(0, 0, 0, 0.9);
+		box-shadow: 0 0 20px 0 black;
+		border-radius: 10px;
 
-    & > div {
-      border-radius: 10px;
+		& > div {
+			border-radius: 10px;
 
-      & > div {
-        border-radius: 10px;
-        & > iframe {
-          border-radius: 10px;
-        }
-      }
-    }
-  }
+			& > div {
+				border-radius: 10px;
+				& > iframe {
+					border-radius: 10px;
+				}
+			}
+		}
+	}
 }
 
 .twitterFeed {
-  width: 100%;
-  padding: 20px;
+	width: 100%;
+	padding: 20px;
 }
 
 @media screen and (min-width: 500px) {
-  .heroVid {
-    h1 {
-      font-size: 24px;
-    }
-  }
+	.heroVid {
+		h1 {
+			font-size: 24px;
+		}
+	}
 }
 
 @media screen and (min-width: 600px) {
-  .heroVid {
-    h1 {
-      font-size: 31px;
-    }
-    .videoPlaceHolder {
-      width: 600px;
-      height: 400px;
-    }
-  }
+	.heroVid {
+		h1 {
+			font-size: 31px;
+		}
+		.videoPlaceHolder {
+			width: 600px;
+			height: 400px;
+		}
+	}
 }
 
 @media screen and (min-width: 1200px) {
-  .heroVid {
-    h1 {
-      font-size: 43px;
-    }
-    .videoPlaceHolder {
-      width: 800px;
-      height: 500px;
-    }
-  }
+	.heroVid {
+		h1 {
+			font-size: 43px;
+		}
+		.videoPlaceHolder {
+			width: 800px;
+			height: 500px;
+		}
+	}
 }

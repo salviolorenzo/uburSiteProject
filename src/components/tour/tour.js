@@ -18,9 +18,11 @@ export default class Tour extends Component {
 		`)
 			.then((r) => r.json())
 			.then((res) => {
-				this.setState({
-					events : res.resultsPage.results.event
-				});
+				if (res.hasOwnProperty('resultsPage') && res.resultsPage.hasOwnProperty('results')) {
+					this.setState({
+						events : res.resultsPage.results.event
+					});
+				}
 			});
 	}
 
