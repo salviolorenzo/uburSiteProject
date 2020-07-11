@@ -4,58 +4,50 @@ import './footer.scss';
 
 export default () => {
   return (
-    <footer className="mainFooter">
-      <img src={uburText} alt="Ubur Text Logo" />
+    <footer className='mainFooter'>
+      <img src={uburText} alt='Ubur Text Logo' />
       <ul>
         <li>
           <a
-            href="https://www.facebook.com/uburdub"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://www.facebook.com/uburdub'
+            target='_blank'
+            rel='noreferrer noopener'
           >
-            <i className="fab fa-facebook-square" />
+            <i className='fab fa-facebook-square' />
             Facebook
           </a>
         </li>
         <li>
           <a
-            href="https://www.facebook.com/groups/297425144206547/"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://www.facebook.com/groups/297425144206547/'
+            target='_blank'
+            rel='noreferrer noopener'
           >
-            <i className="fab fa-facebook-square" />
+            <i className='fab fa-facebook-square' />
             Ubur's Long Bois
           </a>
         </li>
         <li>
           <a
-            href="https://www.instagram.com/uburdub/"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://www.instagram.com/uburdub/'
+            target='_blank'
+            rel='noreferrer noopener'
           >
-            <i className="fab fa-instagram" />
+            <i className='fab fa-instagram' />
             Instagram
           </a>
         </li>
         <li>
           <a
-            href="https://twitter.com/uburdub"
-            target="_blank"
-            rel="noreferrer noopener"
+            href='https://twitter.com/uburdub'
+            target='_blank'
+            rel='noreferrer noopener'
           >
-            <i className="fab fa-twitter" />
+            <i className='fab fa-twitter' />
             Twitter
           </a>
         </li>
       </ul>
-      <a
-        id="authorLink"
-        href="https://lorenzosalvio.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Built by Lorenzo Salvio
-      </a>
     </footer>
   );
 };

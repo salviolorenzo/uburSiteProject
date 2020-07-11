@@ -24,7 +24,7 @@ export default () => {
   return (
     <>
       <div className='heroVid'>
-        <h1>PAINFUL CHOICE EP OUT NOW!</h1>
+        <h1 className='announcement'>PAINFUL CHOICE EP OUT NOW!</h1>
         <div className='videoPlaceHolder'>
           <ReactPlayer
             url={epVid}
