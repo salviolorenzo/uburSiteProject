@@ -37,7 +37,7 @@ export default class Tour extends Component {
 								{item.venue.displayName} | | {item.location.city}
 							</div>
 						</div>
-						<a href={item.uri} target='_blank' rel='noreferrer noopener'>
+						<a href={item.uri} target='_blank' rel='noreferrer noopener' alt='Show Link'>
 							<button>Tickets</button>
 						</a>
 					</div>
@@ -69,7 +69,12 @@ export default class Tour extends Component {
 					{this.displayEvents(this.state.events)}
 					<span>
 						powered by
-						<a href='https://www.songkick.com/' target='_blank' rel='noopener noreferrer'>
+						<a
+							href='https://www.songkick.com/'
+							target='_blank'
+							rel='noopener noreferrer'
+							alt='Songkick Link'
+						>
 							Songkick
 						</a>
 					</span>
